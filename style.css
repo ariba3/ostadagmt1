@@ -17,10 +17,6 @@
   --white: #fff;
   --light-color: #808080;
   --light-bg: #f5f5f8;
-  --google-color: #4285f4;
-  --twitter-color: #1da1f2;
-  --youtube-color: #ff0000;
-  --linkedin-color: #0e76a8;
 }
 
 html {
@@ -29,18 +25,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 
-}
-
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: var(--white);
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--black);
 }
 
 section {
@@ -57,7 +41,7 @@ section {
 }
 
 .btn:hover {
-  background: var(--black);
+  background: var(--black) ;
   color: var(--white);
 }
 
@@ -109,7 +93,7 @@ section {
     padding: 5rem 9%;
     display: flex;
     align-items: center;
-    z-index: 100;
+    
   }
   
   
@@ -142,11 +126,9 @@ section {
     color: var(--white);
     display: none;
   }
-  /* header */
+ 
 
-
-
-  /* services */
+  /* cards */
 .boxs {
     background: var(--light-bg);
   }
@@ -191,20 +173,17 @@ section {
     color: var(--white);
   }
   
-  /* services */
+
 
 /* input */
 .inputcheck {
-      /* background-image: url('banner-image.jpg'); 
-      background-size: cover;
-      background-position: center; */
-      font-size: 20px;
       
+      font-size: 20px;
       margin: 30px ;
-      color: #000000;
+      color:var(--black);
       text-align: center;
       padding: 50px;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(132, 122, 122);
       display: flex;
       justify-content: space-between;
       /* justify-content: center; */
@@ -236,7 +215,7 @@ section {
 }
 .indp{
   margin-top: 100px;
-  color: white;
+  color: var(--white);
 }
 .cards {
   display: flex;
@@ -311,7 +290,7 @@ section {
   
   .footp1{
     padding-top: 120px;
-    color: white;
+    color: var(--white);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -345,10 +324,9 @@ section {
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    
-    margin-right: 24px;
-    
+    margin-right: 24px; 
   }
+
   .fi3{
     background: url(./Twitter.png);
     background-size: contain;
@@ -376,7 +354,7 @@ section {
   }
 
   .hr2{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--white);
     margin-right: 120px;
     margin-left: 120px;
   }
@@ -389,7 +367,7 @@ section {
   }
   
   .fl1{
-    color: white;
+    color: var(--white);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -400,125 +378,6 @@ section {
   /* footer */
   
 
-
-  /* media queries */
-/* @media (max-width: 1200px) {
-    .header {
-      padding: 2rem;
-      flex-direction: column; 
-      align-items: center; 
-    }
-    .header .navbar {
-      width: 100%; 
-      margin-top: 1rem; 
-    }
-  
-    .header .navbar a {
-      margin-left: 1rem; 
-    }
-  
-    .header .menu {
-      display: block;
-      margin-left: auto; 
-    }
-  
-    .header .navbar.show {
-      transform: translateX(0);
-      position: relative; 
-      margin-top: 1rem; 
-    }
-  
-    .header.active {
-      padding: 2rem;
-    }
-  
-    section {
-      padding: 3rem 2rem;
-    }
-  
-    .home h1 {
-      font-size: 5rem;
-    }
-    .inputcheck {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .indisgn {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-  
-    .cardflex {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .cards {
-      justify-content: center;
-    }
-  
-    .card {
-      width: 100%;
-      margin: 20px 0;
-    }
-  
-    .age-input,
-    button {
-      width: 100%;
-    }
-  
-    .container {
-      padding: 10px;
-    }
-  
-  }
-  
-  @media (max-width: 991px) {
-    html {
-      font-size: 60%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .header .menu {
-      display: block;
-    }
-  
-    .header .navbar {
-      position: fixed;
-      top: 6.4rem;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      display: flex;
-      flex-flow: column;
-      text-align: center;
-      transform: translateX(100%);
-      
-    }
-  
-    header .navbar.show {
-      transform: translateX(0);
-    }
-  
-    .header .navbar a {
-      color: var(--black);
-      margin: 0;
-      font-size: 2rem;
-      margin: 2rem 0;
-    }
-  }
-  
-  @media (max-width: 450px) {
-    
-    html {
-      font-size: 55%;
-    }
-    
-  } */
 
   /* media queries */
   @media (max-width: 1200px) {
