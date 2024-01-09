@@ -183,7 +183,7 @@ section {
       color:var(--black);
       text-align: center;
       padding: 50px;
-      background-color: rgb(132, 122, 122);
+      background-color: rgb(255, 255, 255);
       display: flex;
       justify-content: space-between;
       /* justify-content: center; */
