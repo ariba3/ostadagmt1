@@ -390,10 +390,12 @@ section {
     .header .navbar {
       width: 100%;
       margin-top: 1rem;
+
     }
   
     .header .navbar a {
       margin: 1rem 0;
+      margin-right: 1rem;
     }
   
     .header .menu {
@@ -469,7 +471,8 @@ section {
     .header .navbar a {
       color: var(--black);
       font-size: 2rem;
-      margin: 1rem 0;
+      margin-top: 1rem ;
+      margin-left: 1rem;
     }
   }
   
