@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--https://www.codingmanish.in -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age checking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+<!-- home  -->
+<section class="home" id="home">
+    <h1>Welcome to Age Checker</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, voluptatibus.</p>
+    <a href="#" class="btn">learn more</a>
+  </section>
+
+
+<!-- header-->
+<header class="header">
+    <a href="#" class="logo">Card<span>Game</span></a>
+    <a class="menu fas fa-bars"></a>
+    <nav class="navbar">
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">services</a>
+      <a href="#">works</a>
+      <a href="#">contact</a>
+    </nav>
+  </header>
+
+
+
+  <!-- card -->
+<section class="boxs" id="services">
+    <h1 class="heading">Adult vs. Child</h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="./kida.jpeg" alt="" />
+        <h3>Toddler</h3>
+        <p>
+          A toddler is a child approximately 1 to 3 years old, though definitions vary. The toddler years are a time of great cognitive, emotional and social development.
+        </p>
+      </div>
+  
+      <div class="box">
+        <img src="./kid.jpeg" alt="" />
+        <h3>Kid</h3>
+        <p>
+          The term "child" evokes a sense of innocence, curiosity, and the potential for growth, making it a central focus in discussions about education, well-being, and societal responsibilities.
+        </p>
+      </div>
+  
+      <div class="box">
+        <img src="./adult.jpeg" alt="" />
+        <h3>Adult</h3>
+        <p>
+          An adult is a mature individual who has reached the stage of full physical and mental development, typically characterized by the attainment of legal age, different cultures and jurisdictions. 
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- card -->
+  <div class="inputcheck">
+    <div class="cardflex">
+    <div class="indisgn">
+      <p class="indp">Enter your age below </p>
+    <input type="number" class="age-input" id="ageInput" placeholder="Enter your age">
+    <button class="button" onclick="checkAge()">Check Age</button>
+    </div>
+
+    
+      <div class="container">
+
+        <div class="cards" id="resultCard"></div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- footer -->
+  
+<div class="footer">
+  <div class="footpp">
+    <div class="footerpp1">
+      <p class="footp1">Contact Us Through</p>
+    </div>
+   
+  </div>
+  
+  <div class="hr2"></div>
+  <div class="footericon">
+    <div class="fi1"></div>
+    <div class="fi2"></div>
+    <div class="fi3"></div>
+    <div class="fi4"></div>
+  </div>
+  <div class="hr2"></div>
+
+  <div class="fl">
+    <div class="fl1">2017, All Rights Reserved.</div>
+  </div>
+</div>
+ 
+
+<script>
+  function checkAge() {
+    var ageInput = document.getElementById("ageInput").value;
+    var resultCard = document.getElementById("resultCard");
+
+    resultCard.innerHTML = "";
+
+    if (ageInput.trim() === "") {
+      resultCard.innerHTML = "<p>Please enter your age.</p>";
+    } else if (isNaN(ageInput)) {
+      resultCard.innerHTML = "<p>Please enter a valid number.</p>";
+    } else {
+      var card = document.createElement("div");
+      card.className = "card";
+      
+      if (ageInput >= 0 && ageInput <18 ) {
+        card.innerHTML = "<img src='./child.jpeg' alt='kid Image'><h3>You are a child</h3>";
+      } else if (isNaN(ageInput) || ageInput < 0) {
+        resultCard.innerHTML = "<div class='result-message'><p>Please enter a valid number.</p></div>";
+        resultCard.style.display =none;
+      }
+      else{
+        card.innerHTML = "<img src='./a.jpg' alt='Adult Image'><h3>You are an adult</h3>";
+      }
+      resultCard.appendChild(card);
+    }
+  }
+</script>
+
+
+
+</body>
+</html>
